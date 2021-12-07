@@ -23,3 +23,13 @@ sort_images(trainPath)
 testPath = ("mnist-varres/test/")
 sort_images(testPath)
 
+# import shutil
+# import os
+ 
+# file_source = 'Path/Of/Directory'
+# file_destination = 'Path/Of/Directory'
+ 
+# get_files = os.listdir(file_source)
+ 
+# for g in get_files:
+#     shutil.move(file_source + g, file_destination

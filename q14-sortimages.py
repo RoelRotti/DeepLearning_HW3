@@ -3,10 +3,11 @@ from PIL import Image
 import glob
 
 # save image to file with correct label
-def sort_images(path, tr_tst):
+def sort_images(path):
     for i in range(0,10,1):
         files = glob.glob(path + str(i) +"/*.png")
         for filename in files: #assuming gif
+            print(filename)
             im=Image.open(filename)
             if im.size == (32,32):
                 print(im.size)
@@ -18,7 +19,7 @@ def sort_images(path, tr_tst):
             im.close()
 
 trainPath = ("mnist-varres/train/")
-sort_images(trainPath, 'train')
+sort_images(trainPath)
 testPath = ("mnist-varres/test/")
-sort_images(testPath, 'test')
+sort_images(testPath)
 

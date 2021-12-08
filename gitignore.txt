@@ -1,5 +1,0 @@
-/32x32/
-/64x64/
-/48x48/
-data/MNIST/raw
-mnist-varres
